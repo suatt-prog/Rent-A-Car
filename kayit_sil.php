@@ -4,7 +4,7 @@
             header("LOCATION:index.html");
             die();
         }
-        $conn=mysqli_connect("localhost","root","","odev");
+        $conn=mysqli_connect("localhost","386927","sifre","386927");
         $id=$_GET["id"];
         $isim=$_COOKIE["isim"];
         $sifre=$_COOKIE["sifre"];
