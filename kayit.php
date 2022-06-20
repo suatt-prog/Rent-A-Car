@@ -8,7 +8,7 @@
         setcookie("isim", $isim, time() + (86400 * 30), "/"); // 86400 = 1 day
         setcookie("sifre", $sifre, time() + (86400 * 30), "/"); // 86400 = 1 day
     }
-    $conn=mysqli_connect("localhost","root","","odev");
+    $conn=mysqli_connect("localhost","386927","sifre","386927");
     $s="INSERT INTO aracislem". "(isim,sifre)". "VALUES ('$isim','$sifre')";
     $sorgu=mysqli_query($conn,$s);
     session_start();
