@@ -27,7 +27,7 @@
         echo "<table border='1' class='table table-dark'>";
         echo "<tr><td>id</td><td>model</td><td>tarih</td><td>gun sayisi</td><td>teslim alinan sube</td><td>toplam ucret</td></tr>";
         while($row=mysqli_fetch_row($getir)){
-            echo "<tr><td>".$row[6]."</td>"."<td>".$row[0]."</td>"."<td>".$row[1]."</td>"."<td>".$row[2]."</td>"."<td>".$row[3]."</td>"."<td>".$row[7]."</td>"."<td>  <a href='kayit_sil.php?id=".$row[6]."'>delete</a></td>"."</tr>";
+            echo "<tr><td>".$row[7]."</td>"."<td>".$row[0]."</td>"."<td>".$row[1]."</td>"."<td>".$row[2]."</td>"."<td>".$row[3]."</td>"."<td>".$row[6]."</td>"."<td>  <a href='kayit_sil.php?id=".$row[7]."'>delete</a></td>"."</tr>";
         }
         echo "<tr><td><a href='kirala.php'>Rent a car</a></td></tr>";
         echo "</table>";
