@@ -8,14 +8,15 @@
 <?php
     //echo "cookie".$_COOKIE["isim"].$_COOKIE["sifre"];
     session_start();
-    if($_SESSION[$_COOKIE["isim"]]!=$_COOKIE["sifre"]){
+    if($_SESSION[$_COOKIE["isim"]]!=$_COOKIE["sifre"] && $_COOKIE["sifre"]!=null){
         header("LOCATION:index.html");die();
     }
+    echo $_COOKIE["sifre"]." ".$_SESSION[$_COOKIE["isim"]];
     if(isset($_COOKIE["isim"]) && isset($_COOKIE["sifre"])){
         $ad=$_COOKIE["isim"];
         $sifre=$_COOKIE["sifre"];
     }
-    $conn=mysqli_connect("localhost","386927","sifre","386927");
+    $conn=mysqli_connect("localhost","386927","Gr--2002","386927");
     if(!isset($conn)){
         echo "Veritabanina giris saglanamadi";
     }
