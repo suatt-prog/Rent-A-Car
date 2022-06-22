@@ -1,5 +1,5 @@
 <?php
-
+    session_start();
     $conn=mysqli_connect("localhost","386927","sifre","386927");
 
     $s="SELECT * FROM aracislem";
@@ -32,7 +32,6 @@
 
             //echo $isim.$sifre;
 
-            session_start();
 
             $_SESSION[$isim]=$sifre;
 
