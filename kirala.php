@@ -6,6 +6,13 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
+        <?php
+        session_start();
+        if($_SESSION[$_COOKIE["isim"]]!=$_COOKIE["sifre"] ){
+            header("LOCATION:index.html");die();
+        }
+    ?>
+
     <form action="kirala_back.php" method="post">
             <table border=1 class="table table-dark">
             <thead>
