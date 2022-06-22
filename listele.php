@@ -16,7 +16,7 @@
         $ad=$_COOKIE["isim"];
         $sifre=$_COOKIE["sifre"];
     }
-    $conn=mysqli_connect("localhost","386927","Gr--2002","386927");
+    $conn=mysqli_connect("localhost","386927","sifre","386927");
     if(!isset($conn)){
         echo "Veritabanina giris saglanamadi";
     }
